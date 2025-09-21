@@ -18,14 +18,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
 # Inherit from g3ds device
 $(call inherit-product, device/lge/g3ds/device.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := g3ds
-PRODUCT_NAME := lineage_g3ds
+PRODUCT_NAME := aicp_g3ds
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := g3ds
 PRODUCT_MANUFACTURER := LGE
